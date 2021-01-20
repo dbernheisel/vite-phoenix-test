@@ -17,7 +17,6 @@ To start your Phoenix server:
   * Make sure Elixir and Erlang are installed. `brew install elixir` should be fine.
   * Make sure node v14 is installed.
   * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.setup`
   * Install Node.js dependencies with `npm install` inside the `assets` directory.
   * Start Phoenix endpoint with `mix phx.server`
 
