@@ -1,0 +1,7 @@
+<%= if Application.get_env(:my_app, :app_env) == :dev do %>
+<script type="module" src="//localhost:4001/@vite/client"></script>
+<script type="module" src="//localhost:4001/js/app.js"></script>
+<% else %>
+<script type="module" src="<%= vite_path(@conn, "app.js") %>"></script>
+<link href="<%= vite_path(@conn, "app.css") %>" rel="stylesheet" />
+<% end %>
